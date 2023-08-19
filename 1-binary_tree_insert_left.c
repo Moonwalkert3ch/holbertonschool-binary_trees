@@ -6,7 +6,7 @@
 /**
  * binary_tree_insert_left - Inserts a node as the left-child of another node
  * @parent: pointer to node to insert the left-child
- * @va1ue: data to store
+ * @value: data to store
  * Return: newnode or NULL if fails
 */
 
@@ -34,5 +34,5 @@ if (parent->left != NULL)
 }
 parent->left = tmp;
 
-return (tmp);	
+return (tmp);
 }
