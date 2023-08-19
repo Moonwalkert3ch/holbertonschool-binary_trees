@@ -15,12 +15,12 @@ binary_tree_t *tmp;
 
 tmp = malloc(sizeof(binary_tree_t));
 
-if (parent == NULL && tmp == NULL)
+if ((parent == NULL || value == '0') && tmp == NULL)
 	return (NULL);
 
 tmp->n = value;
-tmp->left = NULL;
 tmp->parent = parent;
+tmp->left = NULL;
 tmp->right = NULL;
 
 if (parent->right != NULL)
